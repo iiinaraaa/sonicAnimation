@@ -1,0 +1,45 @@
+body {
+  background-image: url(https://www.itl.cat/pngfile/big/100-1009888_splash-hill-zone-progress-log-new-green-hill.jpg);
+}
+
+.sonicImg {
+  width: 60px;
+  margin-top: 20px;
+  position: relative;
+  transform-origin: center center;
+  animation: 
+    spaw 2s ease-in,
+    andar 4s ease,
+    cair 4s ease-in,
+    pular 10s linear forwards ;
+}
+
+@keyframes spaw {
+  0% {transform: translateY(0)}
+  15% {transform: translateY(100px)}
+}
+
+@keyframes andar {
+  20% {transform: translateY(227px) translateX(0)}
+  25% {transform: translateY(100px) translateX(1px)}
+}
+
+@keyframes cair {
+  30% {transform: translateY(280px) translateX(1px)}
+  35% {transform: translateY(290px) translateX(1px)}
+}
+
+@keyframes pular {
+  40% {transform: translateY(290px) translateX(1px)}
+  45% {transform: translateY(300px) translateX(250px)}
+  50% {transform: translateY(200px) translateX(250px)}
+  55% {transform: translateY(200px) translateX(500px)}
+  60% {transform: translateY(230px) translateX(500px)}
+  65% {transform: translateY(230px) translateX(645px)}
+  70% {transform: translateY(250px) translateX(660px)}
+  72% {transform: translateY(260px) translateX(665px)}
+  74% {transform: translateY(269px) translateX(667px) rotate(0deg)}
+  77% {transform: translateY(220px) translateX(820px) rotate(-600deg) translate(70px)}
+  80% {transform: translateY(269px) translateX(667px)}
+  100% {transform: translateY(280px) translateX(1000px)}
+}
